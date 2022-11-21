@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <label for="full-name">Повне ім'я</label>
+      <input type="text" id="full-name" required />
+      <br /><br />
+      <label for="my-email">Email</label>
+      <input type="email" id="my-email" required />
+      <br /><br />
+      <label for="my-password">Пароль</label>
+      <input type="password" id="my-password" required />
+      <br /><br />
+      <label for="gender">Стать</label>
+      <input type="radio" name="gender" value="man" checked /> Чоловік
+      <input type="radio" name="gender" value="woman" /> Жінка <br /><br />
+      <label for="age">Вік</label>
+      <input type="number" id="age" required />
+      <br /><br />
+      <label for="my-course">Курс</label>
+      <select id="my-course">
+        <option value="front-end">Front-End</option>
+        <option value="back-end">Back-End</option>
+        <option value="project-management">Project Management</option>
+        <option value="qa-manual">QA Manual</option>
+      </select>
+      <br /><br />
+      <label for="my-adress">Повна адреса</label>
+      <textarea id="my-adress" required></textarea>
+      <br /><br />
+      <input type="checkbox" id="agreement" required />
+      <label for="agreement">Я погоджуюсь з обробкою персональних даних</label>
+      <br />
+      <br />
+      <button type="reset">Очистити форму</button>
+      <button type="submit">Зареєструватися</button>
+    </form>
+  </body>
+</html>
