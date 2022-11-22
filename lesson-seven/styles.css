@@ -1,0 +1,148 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: #070707;
+    font-weight: 400;
+    font-size: 18px;
+    width: 970px;
+    padding-left: 235px;
+    padding-right: 235px;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+}
+.nav-list-item a{
+    color: #828282;
+    text-decoration: none;
+}
+hr{
+    margin-bottom: 12px;
+}
+#home{
+    padding: 0%;
+}
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    text-align: left;
+    margin-top: 0%;
+    margin-bottom: 50px;
+    line-height: 65px;
+}
+#m-photo{
+   
+    width: 100%;
+}
+
+#about-me{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#about-me h2{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+#about-me p{
+    margin-bottom: 30px;
+}
+#skills{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#skills h2{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+}
+#skills p{
+    margin-bottom: 50px;
+}
+#tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 97px;
+}
+#tools p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #828282;
+}
+
+#portfolio{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#portfolio h2{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+#portolio figure{
+    
+}
+#portfolio figure figcaption{
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+#portfolio figure figcaption a{
+    color: #070707;
+    text-decoration: none;
+}
+
+footer h2{
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 20px;
+}
+footer p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+footer button{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 180px;
+    height: 44px;
+    background: #070707;
+    border-radius: 22px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #fff;
+}
+.social-links{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+#like-me{
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #828282;
+}
