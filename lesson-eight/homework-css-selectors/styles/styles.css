@@ -1,0 +1,97 @@
+*{box-sizing: border-box;}
+body {
+    transition: all .1s ease-in;
+    background-color: #3B3F45;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    padding-top: 0;
+}
+
+header{
+    background-color: #4A4F56;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: -16px;
+}
+#main-title{
+    font-weight: 700;
+    font-size: 24px;
+}
+.main-text{
+    color: #FF8984;
+}
+h1 + .main-text{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.point-box{
+    background-color: #88839E;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+main div:nth-child(2n){
+    background-color: #7A7593;
+}
+.point-item{
+    background-color: inherit;
+}
+.point-main-text{
+    vertical-align: middle;
+}
+.point-extra-text{
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.point-box:hover{
+    background-color: #625E77;
+    border-top: #fff 3px solid;
+    border-bottom: #fff 3px solid;
+}
+.point-box:hover label{
+    background-color: #625E77;
+}
+
+.point-check:checked + label > span {
+    color: #9B96AC;
+    text-decoration: line-through;
+}
+.point-check:checked{
+    accent-color: white;
+}
+.point-box:active {
+    background-color: crimson;
+}
+.point-box:active label{
+    background-color: crimson;
+}
+
+
+
+footer{
+    margin-top: 45px;
+    background-color: #4A4F56;
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+footer h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+#footer-text::after{
+    content: " :)";
+}

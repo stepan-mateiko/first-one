@@ -1,0 +1,124 @@
+.class1{
+    background-color: blue;
+}
+.class2 {
+    background-color: pink;
+}
+.class3 {
+    background-color: red;
+}
+.class4 {
+    background-color: yellow;
+}
+
+/* select elements that have both classes */
+.class1.class2{
+    font-weight: 700;
+}
+/* all elements of class3 that are child of class1 */
+.class1 .class3{
+    color: white;
+}
+/* select class2 that goes just after class1 */
+.class1 + .class2{
+    font-size: 30px;
+}
+
+/* select class4 that is after class1, but can be not exactly after it */
+.class1 ~ .class4{
+text-decoration: underline;
+}
+
+.class1 > .class3{
+    border: 2px solid black;
+}
+
+
+.animal{
+    font-size: 18px;
+    color: aqua;
+    font-weight: 700;
+    background-color: beige;
+    text-decoration: underline;
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+ul{
+    padding-inline-start: 0%;
+}
+.animal:first-child{
+    background-color:lightblue;
+    color: white;
+}
+.animal:last-child{
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+.animal:nth-child(3){
+    background-color: goldenrod;
+    color: red;
+}
+
+.name{
+    color: blue;
+}
+
+.age{
+    color: blueviolet;
+}
+
+.button{
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+.button:hover{
+    background-color: darkblue;
+    color: white;
+}
+.button:disabled{
+    background-color: lightgray;
+    color: darkgray;
+}
+.button:disabled:hover {
+    background-color: lightgray;
+    color: darkgray;
+}
+.button:active{
+    background-color: greenyellow;
+}
+.info:checked{
+    color: red;
+    box-shadow: 0 0 0 3px lime;
+}
+.age:focus{
+    color: red;
+}
+
+form:not(label){
+    background-color: beige;
+}
+
+.hello::first-letter{
+    color: red;
+    font-size: 20px;
+}
+/* .hello::before{
+    content: "(";
+} */
+.hello::after{
+    content: ")";
+}
+.user:hover::before{
+    content: "(=";
+}
+.user:hover::after{
+    content: " Yulia";
+}
+.content::first-line{
+    font-weight: 700;
+    font-size: 24px;
+    color: red;
+}
