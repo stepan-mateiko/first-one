@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* Homework for Box-Model */
+header{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.header-container{
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+}
+#header-logo{
+    display: inline-block;
+    margin-right: 198px;
+    width: 200px;
+}
+.header-nav{
+    display: inline-block;
+    margin-right: 198px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 350px;
+}
+.header-nav a{
+    text-decoration: none;
+    color: #2F281E;
+    margin-left: 2%;
+}
+.header-nav a:first-of-type{
+    margin-left: 0;
+}
+
+.header-nav a:hover{
+    color: #FF9900;
+}
+.header-btn{
+    display: inline-block;
+    width: 250px;
+}
+.sign-in{
+    font-family: 'Montserrat', sans-serif;
+    width: 110px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2F281E;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-right: 25px;
+    background-color: white;
+}
+.sign-in:hover{
+    border: none;
+    background-color: #FF9900;
+    color: white;
+}
+
+.sign-up{
+    font-family: 'Montserrat', sans-serif;
+    width: 110px;
+    border: none;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #FF9900;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.sign-up:hover{
+    color: #2F281E;
+    border: 1px solid #BCD0E5;
+    background-color: white;
+}
+
+
+.first-section{
+    width: 1220px;
+    margin: 70px auto;
+    margin-bottom: 100px;
+    padding: 0;
+}
+.first-section-container{
+    text-align: center;
+    display: inline-block;
+    width: 41%;
+    margin-top: 100px;
+    vertical-align: top;
+}
+.first-section-heading{
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    columns: #2F281E;
+}
+.first-section-par{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #544837;
+    text-align: left;
+}
+.first-section-btn{
+    font-family: 'Montserrat', sans-serif;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    padding: 13px 40px;
+    cursor: pointer;
+    display: block;
+}
+.first-section-btn:hover{
+    color: #2F281E;
+    border: 1px solid #BCD0E5;
+    background-color: white;
+}
+#first-section-image{
+    display: inline-block;
+    width: 53%;
+}
+
+/* Start Homework for Flex */
+
+.features{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 76px;
+    background-image: url(/assets/images/bg.png);
+    margin-bottom: 100px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}  
+.features-heading{
+    width: 540px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+.features-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+.features-card{
+    width: 270px;
+    text-align: left;
+}
+.features-card-heading{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+.features-card-text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+.features-btn{
+    font-family: 'Montserrat', sans-serif;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    padding: 13px 40px;
+    cursor: pointer;
+}
+.features-btn:hover {
+    color: #2F281E;
+    border: 1px solid #BCD0E5;
+    background-color: white;
+}
+
+
+@font-face {
+    font-family: Gotham;
+    src: url(/assets/fonts/GothamBold.ttf);
+}
+
+.footer-container{
+    width: 1220px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-around;
+}
+#footer-logo{
+    align-self: flex-start;
+    margin-top: 20px;
+}
+.footer-quick-links{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-quick-links-heading, .footer-legal-stuff-heading, .footer-form-heading{
+    font-family: Gotham;
+    font-weight: 700;
+    font-size: 20px;
+}
+.footer-quick-links-item, .footer-legal-stuff-item{
+    text-decoration: none;
+    color: #2F281E;
+}
+.footer-legal-stuff-item:hover, .footer-quick-links-item:hover{
+    color: #FF9900;
+}
+.footer-legal-stuff{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.footer-form{
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-form input{
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 340px;
+    height: 50px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.footer-form-btn{
+    font-family: 'Montserrat', sans-serif;
+    background: #FF9900;
+    border-radius: 4px;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    padding: 13px 20px;
+    cursor: pointer;
+    width: 180px;
+}
+.footer-form-btn:hover{
+    color: #2F281E;
+    border: 1px solid #BCD0E5;
+    background-color: white;
+}
