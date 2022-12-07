@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    position: relative;
+}
+
+.block-1 {
+    font-family: 'Kenia',
+    cursive;
+}
+.block-2 {
+    font-family: 'Montserrat',
+    sans-serif;
+    font-weight: 700;
+}
+.block-3 {
+    font-family: 'Noto Sans',
+    sans-serif;
+    font-weight: 600;
+}
+.block-4 {
+    font-family: 'Noto Sans Mono',
+    monospace;
+}
+.block-5 {
+    font-family: 'Open Sans',
+    sans-serif;
+}
+.block-6 {
+    font-family: 'Roboto',
+    sans-serif;
+    font-weight: 700;
+}
+
+.customs-style{
+    color: brown;
+    font-size: 24px;
+}
+
+.wrapper{
+    background-color: lightblue;
+    width: 60%;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+}
+
+.innerblock{
+    width: 25%;
+    padding: 100px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    border: 1px solid black;
+    left: 0;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    height:  300px;
+    z-index: 2;
+}
+.innerblock2{
+    width: 53%;
+    padding: 50px;
+    position: absolute;
+    right: 250px;
+    background-color: red;
+    height: 300px;
+    z-index: 1;
+}
+
+.header{
+    background-color: lightblue;
+    color: black;
+    text-align: center;
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
