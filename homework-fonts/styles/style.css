@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.header{
+    width: 83%;
+    margin: 13px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+.lang{
+    font-family: 'Tourney', cursive;
+    font-weight: 600;
+    font-size: 22px;
+}
+.documentation{
+    font-family: 'Staatliches', cursive;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+.main-text{
+    width: 83%;
+    margin: 87px auto 0 auto;
+}
+
+.heading{
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.heading sup{
+    font-family: 'Farro', sans-serif;
+    font-weight: 300;
+    font-size: 42%;
+    text-transform: capitalize;
+    vertical-align: super;
+}
+
+.main-text p{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+.highlight{
+    background-color: #DADADA;
+}
+
+.introduction, .core-components, .react-fundamentals{
+    margin-bottom: 70px;
+}
+
+.react-fundamentals p{
+    margin-bottom: 40px;
+}
