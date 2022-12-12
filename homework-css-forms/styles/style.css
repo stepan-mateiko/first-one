@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background-color: #E5E5E5;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+.registration, .profile{
+    width: 40%;
+    background-color: white;
+    padding: 35px;
+    border-radius: 15px;
+}
+.btn{
+    width: 100%;
+}
+label{
+    color: #545454;
+    font-weight: 400;
+    font-size: 15px;
+}
+.privacy{
+    color: #969696;
+    font-size: 13px;
+    text-align: center;
+}
+.privacy a{
+    text-decoration: none;
+}
+.login{
+    color: #545454;
+    text-align: center;
+}
+.login a{
+    text-decoration: none;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.profile-photo{
+    position: relative;
+}
+.profile-photo img{
+    border-radius: 50%;
+}
+.photo-btn{
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    display: inline-block;
+    width: 30%;
+    cursor: pointer;
+}
+.add-photo{
+    opacity: 0;
+    width: 75%;
+    cursor: pointer;
+}
+.photo-btn label{
+    color: #E4E4E4;
+}
+.reset-btn{
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    background-color: white;
+    color: #E4E4E4;
+    padding: 3px 7px;
+}
+.photo-btn:hover, .reset-btn:hover{
+    background-color: whitesmoke;
+}
+
+.photo-size{
+position: absolute ;
+bottom: 0px;
+font-size: 13px;
+font-weight: 400;
+color: #969696;
+width: 55%;
+right: 20%;
+}
+.profile-btn{
+    width: 25%;
+}
