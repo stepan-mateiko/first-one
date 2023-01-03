@@ -1,0 +1,14 @@
+@mixin center($width:100%){
+    width: $width;
+    margin: 0 auto;
+}
+
+@mixin flex(){
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin raleway($weight:500){
+    font-family: 'Raleway', sans-serif;
+    font-weight: $weight;
+}

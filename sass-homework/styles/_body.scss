@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1440px;
+    @include center(100%);
+}
+
+.header{
+    max-width: 450px;
+    text-align: center;
+    @include center(33%);
+    margin-top: 120px;
+    &__text{
+        @include raleway;
+        font-size: 18px;
+        color: #898F8F;
+        text-transform: uppercase;
+    }
+    &__heading{
+        color: $gold;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        font-size: 60px;
+    }
+    &__divider{
+    @include flex;
+        &__line{
+            border-top: $gold solid 1px;
+            width: 45%;
+        }
+    }
+}
+
+.main{
+    @include flex;
+    max-width: 1030px;
+    @include center(72%);
+    margin-top: 50px;
+    margin-bottom: 120px;
+    &__image{
+        width: 41%;
+        margin-top: 100px;
+    }
+    &__divider{
+        width: 15%;
+        padding: 0;
+            &__line{
+                border-left: $gold solid 1px;
+                border-top: 1px solid white;
+                height: 100%;
+                width: 1px;
+        }
+    }
+    &__description{
+        text-align: center;
+        width: 41%;
+        margin-top: 100px;
+        &__heading{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+            font-size: 36px;
+            color: $darkgrey;
+        }
+        &__line-1{
+            border-top: 1px solid $gold;
+            width: 30%;
+        }
+        &__job{
+            @include raleway(400);
+            font-size: 24px;
+            color: $darkgrey;
+        }
+        &__links a{
+            text-decoration: none;
+        }
+        &__text{
+            @include raleway;
+            font-size: 14px;
+            color: #333333;
+        }
+        &__line-2{
+            border-top: 4px dashed $gold;
+            width: 10%;
+        }
+        &__button{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            color: $darkgrey;
+            border: 1px solid $gold;
+            text-transform: uppercase;
+        }
+    }
+}
