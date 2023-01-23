@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Responsive navigation</title>
+  </head>
+  <body>
+    <!-- Closed sidebar -->
+    <aside class="closed" style="display: block" id="closed-menu">
+      <div class="closed__heading">
+        <img src="./assets/images/icons/logo.svg" alt="logo" class="logo" />
+        <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()"
+          ><img
+            class="menu-btn"
+            src="./assets/images/icons/arrow.svg"
+            alt="arrow"
+        /></a>
+      </div>
+      <div class="closed__dashboard">
+        <a href="#"
+          ><img src="./assets/images/icons/dashboard.svg" alt="dashboard"
+        /></a>
+      </div>
+      <hr />
+      <div class="closed__apps">
+        <a href="#"><img src="./assets/images/icons/mail.svg" alt="mail" /></a>
+        <a href="#"
+          ><img src="./assets/images/icons/bubble.svg" alt="bubble"
+        /></a>
+        <a href="#"
+          ><img src="./assets/images/icons/calendar.svg" alt="calendar"
+        /></a>
+        <a href="#"><img src="./assets/images/icons/news.svg" alt="news" /></a>
+        <a href="#"
+          ><img src="./assets/images/icons/study 1.svg" alt="study"
+        /></a>
+        <a href="#"
+          ><img src="./assets/images/icons/stack.svg" alt="stack"
+        /></a>
+        <a href="#"
+          ><img src="./assets/images/icons/location.svg" alt="location"
+        /></a>
+      </div>
+      <hr />
+      <div class="closed__auth">
+        <a href="#"
+          ><img src="./assets/images/icons/profile.svg" alt="profile"
+        /></a>
+        <a href="#"><img src="./assets/images/icons/lock.svg" alt="lock" /></a>
+        <a href="#"
+          ><img src="./assets/images/icons/log-out.svg" alt="log-out"
+        /></a>
+      </div>
+      <hr />
+      <div class="closed__user">
+        <a href="#"><img src="./assets/images/icons/eye.svg" alt="eye" /></a>
+        <a href="#"
+          ><img src="./assets/images/icons/wallet.svg" alt="wallet"
+        /></a>
+        <a href="#"><img src="./assets/images/icons/lab.svg" alt="lab" /></a>
+        <a href="#"><img src="./assets/images/icons/page.svg" alt="page" /></a>
+        <a href="#"><img src="./assets/images/icons/pen.svg" alt="pen" /></a>
+      </div>
+    </aside>
+    <!-- Open sidebar -->
+    <aside class="open" style="display: none" id="open-menu">
+      <div class="open__heading">
+        <img src="./assets/images/icons/logo.svg" alt="logo" />
+        <span>LightBoard</span>
+        <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()"
+          ><img src="./assets/images/icons/arrow-reversed.svg" alt="arrow"
+        /></a>
+      </div>
+      <div class="open__dashboard">
+        <a href="#"
+          ><img src="./assets/images/icons/dashboard.svg" alt="dashboard" />
+          Dashboard</a
+        >
+      </div>
+      <p>Apps</p>
+      <div class="open__apps">
+        <a href="#"
+          ><img src="./assets/images/icons/mail.svg" alt="mail" /> Email</a
+        >
+        <a href="#"
+          ><img src="./assets/images/icons/bubble.svg" alt="bubble" /> Chats</a
+        >
+        <a href="#"
+          ><img
+            src="./assets/images/icons/calendar.svg"
+            alt="calendar"
+          />Calendar</a
+        >
+        <a href="#"
+          ><img src="./assets/images/icons/news.svg" alt="news" />News</a
+        >
+        <a href="#"
+          ><img
+            src="./assets/images/icons/study 1.svg"
+            alt="study"
+          />Knowledge</a
+        >
+        <a href="#"
+          ><img src="./assets/images/icons/stack.svg" alt="stack" />File
+          manager</a
+        >
+        <a href="#"
+          ><img
+            src="./assets/images/icons/location.svg"
+            alt="location"
+          />Leaflet Maps</a
+        >
+      </div>
+      <p>Auth pages</p>
+      <div class="open__auth">
+        <a href="#"
+          ><img
+            src="./assets/images/icons/profile.svg"
+            alt="profile"
+          />Profile</a
+        >
+        <a href="#"
+          ><img src="./assets/images/icons/lock.svg" alt="lock" />
+          Permissions</a
+        >
+        <a href="#"
+          ><img src="./assets/images/icons/log-out.svg" alt="log-out" /> Log
+          Out</a
+        >
+      </div>
+      <p>User Interface</p>
+      <div class="open__user">
+        <a href="#"
+          ><img src="./assets/images/icons/eye.svg" alt="eye" />Feather</a
+        >
+        <a href="#"
+          ><img
+            src="./assets/images/icons/wallet.svg"
+            alt="wallet"
+          />Ecommerce</a
+        >
+        <a href="#"
+          ><img src="./assets/images/icons/lab.svg" alt="lab" />Components</a
+        >
+        <a href="#"
+          ><img src="./assets/images/icons/page.svg" alt="page" />Pages</a
+        >
+        <a href="#"
+          ><img src="./assets/images/icons/pen.svg" alt="pen" />Editor</a
+        >
+      </div>
+    </aside>
+    <!-- Main -->
+    <main id="main" class="main" style="background-color: white">
+      <div class="main__header">
+        <div class="main__header__container">
+          <div class="main__header__container__panel">
+            <a href="#"
+              ><img src="./assets/images/icons/mail.svg" alt="mail"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/icons/bubble.svg" alt="bubble"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/icons/calendar.svg" alt="calendar"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/icons/star.svg" alt="star"
+            /></a>
+          </div>
+          <div class="main__header__container__settings">
+            <a href="#"
+              ><img src="./assets/images/icons/lang-icon.svg" alt="lang" />
+              <span>English</span>
+            </a>
+            <a
+              href="href=javascript:void(0);"
+              class="icon"
+              onclick="themeChange()"
+            >
+              <img
+                src="./assets/images/icons/change-theme.svg"
+                alt="change-theme"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/icons/search.svg" alt="search"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/icons/set.svg" alt="set"
+            /></a>
+            <a href="#"
+              ><img src="./assets/images/icons/Avatar.svg" alt="Avatar"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="main__background">
+        <img src="./assets/images/bg.png" alt="background" />
+      </div>
+    </main>
+    <!-- Script -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("closed-menu");
+        var y = document.getElementById("open-menu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else if (x.style.display === "none") {
+          x.style.display = "block";
+        }
+        if (y.style.display === "block") {
+          y.style.display = "none";
+        } else if (y.style.display === "none") {
+          y.style.display = "block";
+        }
+      }
+      function themeChange() {
+        var x = document.getElementById("main");
+        if (x.style.backgroundColor === "white") {
+          x.style.backgroundColor = "$blue-darken";
+        } else if (x.style.backgroundColor === "$blue-darken") {
+          x.style.backgroundColor = "white";
+        }
+      }
+    </script>
+  </body>
+</html>
