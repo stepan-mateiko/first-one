@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 200px;
+}
+
+@keyframes showHide {
+  from {
+    opacity: 1;
+    color: blue;
+    font-size: 32px;
+  }
+  to {
+    opacity: 0;
+    color: red;
+    font-size: 16px;
+    transform: rotate(360deg);
+  }
+}
+@keyframes multicolor {
+  0% {
+    color: blue;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: yellow;
+  }
+  75% {
+    color: purple;
+  }
+  100% {
+    color: blue;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    color: blue;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    transform: rotate(360deg);
+    color: yellow;
+  }
+  100% {
+    transform: rotate(0deg);
+    color: blue;
+  }
+}
+.test {
+  width: fit-content;
+  animation: rotation 5s linear infinite;
+}
+
+/*# sourceMappingURL=index.css.map */

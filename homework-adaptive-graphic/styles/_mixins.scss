@@ -1,0 +1,28 @@
+@mixin flex-between () {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-around() {
+    display: flex;
+    justify-content: space-around;
+}
+
+@mixin center($width: 100%, $max: 1440px) {
+    width: $width;
+    margin: 0 auto;
+    max-width: $max;
+}
+
+@mixin red-hat ($weight: 400, $size: 16px) {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    color: black;
+}
+
+@mixin lato ($size: 16px) {
+    font-family: 'Lato', sans-serif;
+    font-size: $size;
+    font-weight: 400;
+}
